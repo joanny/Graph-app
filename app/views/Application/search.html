@@ -29,19 +29,19 @@
  
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<form	action="@{Application.search}" method="POST">
+<form	action="@{Application.search}" method="GET">
 		 <div class="row">
 		  <div class="col-lg-6">
 			<div class="input-group">
-				<select name="start">
+				<select class="selectpicker">
 					#{list items:lesNodes, as:'node'}    
-						<option value=${node.node_name}>${node.node_name}</option>
+						<option>${node.node_name}</option>
 					#{/list}
-				</select>	
+				</select>
 			</div><!-- /input-group -->
 		  </div>
 		<div class="input-group">
-				<select name="end">
+				<select class="selectpicker">
 					 #{list items:lesNodes, as:'node'}    
 						<option>${node.node_name}</option>
 					#{/list}			 

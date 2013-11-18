@@ -4,7 +4,7 @@
 
 # Home page
 GET     /                                       Application.index
-
+GET		/search/{start}/{end}								Application.search
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

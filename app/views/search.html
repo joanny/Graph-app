@@ -33,7 +33,7 @@
 		 <div class="row">
 		  <div class="col-lg-6">
 			<div class="input-group">
-				<select name="start">
+				<select name="start" class="selectpicker">
 					#{list items:lesNodes, as:'node'}    
 						<option value=${node.node_name}>${node.node_name}</option>
 					#{/list}
@@ -41,7 +41,7 @@
 			</div><!-- /input-group -->
 		  </div>
 		<div class="input-group">
-				<select name="end">
+				<select name="end"  class="selectpicker">
 					 #{list items:lesNodes, as:'node'}    
 						<option>${node.node_name}</option>
 					#{/list}			 
